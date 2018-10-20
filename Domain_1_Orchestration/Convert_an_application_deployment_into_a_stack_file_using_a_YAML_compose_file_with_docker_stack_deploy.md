@@ -2,4 +2,9 @@
 
 ## Official Docker Documentation
 [Docker Stack Deploy](https://docs.docker.com/engine/reference/commandline/stack_deploy/)  
+
+```bash
+docker stack deploy [OPTIONS] STACK
+```
+
 [Docker Compose Service Configuration Reference](https://docs.docker.com/compose/compose-file/#service-configuration-reference)  
