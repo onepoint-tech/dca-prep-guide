@@ -2,3 +2,5 @@
 
 ## Official Docker Documentation
 [docker image push](https://docs.docker.com/engine/reference/commandline/image_push/)  
+
+```docker image push [OPTIONS] NAME[:TAG]```

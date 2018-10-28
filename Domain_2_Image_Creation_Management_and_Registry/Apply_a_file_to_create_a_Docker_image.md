@@ -2,3 +2,7 @@
 
 ## Official Docker Documentation
 [docker image build](https://docs.docker.com/engine/reference/commandline/image_build/)  
+
+```bash
+docker image build [OPTIONS] PATH | URL | -
+```
