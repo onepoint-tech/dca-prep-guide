@@ -2,3 +2,5 @@
 
 ## Official Docker Documentation
 [Configure Docker to start on boot](https://docs.docker.com/engine/installation/linux/linux-postinstall//)  
+
+```sudo systemctl enable docker```
