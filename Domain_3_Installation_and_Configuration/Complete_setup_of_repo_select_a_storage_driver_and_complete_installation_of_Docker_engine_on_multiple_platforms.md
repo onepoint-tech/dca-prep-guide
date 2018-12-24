@@ -13,3 +13,17 @@ There you also find the exact commands that you need to follow to install the Do
 
 The information about the supported storage drivers for production workloads can be found in the [Product Compatibility Matrix](https://success.docker.com/Policies/Compatibility_Matrix).
 How to configure which storage driver is used is also described in the installation guide of each operating system.
+
+[Configuredevice mapper](https://docs.docker.com/storage/storagedriver/device-mapper-driver/)
+
+## sumamry
+
+- get the URL of our private repos from https://hub.docker.com/my-content
+- add this repo to the package manager
+  - ubuntu : ```add-apt-repository```
+  - RHEL : 
+    - ```sudo -E yum-config-manager --add-repo     "$DOCKERURL/rhel/docker-ee.repo"```
+- install requirements
+  - on RHEL ```sudo yum install -y yum-utils  device-mapper-persistent-data lvm2```
+- configure device mapper (if used)
+  -  add ```"storage-driver": "devicemapper"``` to ```/etc/docker/daemon.json```

@@ -31,3 +31,7 @@ docker run --log-driver none -i --rm \
   --ucp-username <ucp-username> \
   --existing-replica-id <replica-id> > dtr-metadata-backup.tar
 ```
+[Restore UCP](https://docs.docker.com/datacenter/ucp/2.2/guides/admin/backups-and-disaster-recovery/#restore-ucp)
+
+1. uninstall-ucp
+1. restore with ```docker container run ... docker/ucp:2.2.14 restore < /tmp/backup.tar```

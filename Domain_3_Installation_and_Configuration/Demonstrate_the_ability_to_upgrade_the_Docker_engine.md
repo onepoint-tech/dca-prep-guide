@@ -1,12 +1,16 @@
 # Demonstrate the ability to upgrade the Docker engine
 
 ## Official Docker Documentation
-The documentation for upgrading Docker EE engine is described in the installation section for each of the supported operating systems.
 
-[Cent OS](https://docs.docker.com/install/linux/docker-ee/centos/#install-using-the-repository)  
-[Oracle Linux](https://docs.docker.com/install/linux/docker-ee/oracle/#install-using-the-repository)  
-[Red Hat Enterprise Linux](https://docs.docker.com/install/linux/docker-ee/rhel/#install-using-the-repository)  
-[SUSE SLES](https://docs.docker.com/install/linux/docker-ee/suse/#install-using-the-repository)  
-[Ubuntu](https://docs.docker.com/install/linux/docker-ee/ubuntu/#install-docker-ee)  
-[Windows Server 2016](https://docs.docker.com/install/windows/docker-ee/#update-docker-ee)  
+### Upgrade engine (ce & ee)
+
+use OS package manager
+
+### Upgrade UCP
+https://docs.docker.com/datacenter/ucp/3.0/guides/admin/install/upgrade/
+
+1. upgrade engine
+1. upgrade ucp via IHM or CLI ```docker container run ... docker/ucp:3.0.7 upgrade --interactive```
+
+
 
