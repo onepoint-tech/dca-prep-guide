@@ -5,7 +5,10 @@
 ### Official Docker Documentation
 [About images, containers, and storage drivers](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/)  
 
-
+- image layers are R/O
+- container layer is R/W
+- All containers based on the same image share the same images layers
+- copy-on-write (CoW) strategy : when a container modify a file for the first time this file is copy from the image layer before update
 
 ## Part 2: where those layers reside on the filesystem
 
