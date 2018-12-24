@@ -6,8 +6,9 @@ In a shell, you can enable content trust by setting the DOCKER_CONTENT_TRUST env
 
 To enable content trust in a bash shell enter the following command:
 
-export DOCKER_CONTENT_TRUST=1
+```export DOCKER_CONTENT_TRUST=1```
 
 ## Official Docker Documentation
 [Enable and disable content trust per-shell or per-invocation](https://docs.docker.com/engine/security/trust/content_trust/#enable-and-disable-content-trust-per-shell-or-per-invocation)
 
+Docker Content Trust (DCT) allows operations with a remote Docker registry to enforce client-side signing and verification of image tags. 
