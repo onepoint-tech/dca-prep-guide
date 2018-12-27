@@ -13,7 +13,7 @@ To backup Docker Enterprise Edition you need to create individual backups for ea
 
 1. If the swarm has auto-lock enabled, you need the unlock key to restore the swarm from backup.
 2. Stop Docker on the manager before backing up the data
-3. Back up the entire /var/lib/docker/swarm directory.
+3. Back up the entire ```/var/lib/docker/swarm``` directory.
 4. Restart the manager.
 
 [DTR backups and recovery](https://docs.docker.com/ee/dtr/admin/disaster-recovery/)  
