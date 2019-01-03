@@ -8,13 +8,13 @@
 [Filter inspect results](https://docs.docker.com/engine/reference/commandline/images/#filtering)  
 
 ```bash
-docker images --filter "dangling=true"
+docker image ls --filter "dangling=true"
 
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 <none>              <none>              8abc22fbb042        4 weeks ago         0 B
 <none>              <none>              48e5f45168b9        4 weeks ago         2.489 MB
 
-docker images --filter "label=com.example.version"
+docker image ls --filter "label=com.example.version"
 
 REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
 match-me-1          latest              eeae25ada2aa        About a minute ago   188.3 MB
@@ -31,7 +31,7 @@ match-me-1          latest              eeae25ada2aa        About a minute ago  
 - .Size	: Image disk size
 
 ```bash
-docker images --format "{{.ID}}: {{.Repository}}"
+docker image ls --format "{{.ID}}: {{.Repository}}"
 
 77af4d6b9913: <none>
 b6fa739cedf5: committ

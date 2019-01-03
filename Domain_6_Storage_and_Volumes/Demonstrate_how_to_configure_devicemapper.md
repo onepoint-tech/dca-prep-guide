@@ -11,7 +11,7 @@ Supported Distribution :
 
 daemon.json example :
 
-````json
+```json
 {
   "storage-driver": "devicemapper",
   "storage-opts": [
