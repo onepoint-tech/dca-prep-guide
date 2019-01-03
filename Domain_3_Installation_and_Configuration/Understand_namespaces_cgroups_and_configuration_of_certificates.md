@@ -26,3 +26,5 @@ Docker Engine on Linux also relies on another technology called control groups (
 
 By default, Docker runs through a non-networked UNIX socket. It can also optionally communicate using an HTTP socket.
 If you need Docker to be reachable through the network in a safe manner, you can enable TLS by specifying the tlsverify flag and pointing Docker’s tlscacert flag to a trusted CA certificate.
+
+```dockerd --tlsverify --tlscacert=ca.pem --tlscert=server-cert.pem --tlskey=server-key.pem -H=0.0.0.0:2376```
